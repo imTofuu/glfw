@@ -1,7 +1,7 @@
-project: "GLFW"
-  kind: "StaticLib"
-  language: "C"
-  warnings: "off"
+project "GLFW"
+  kind "StaticLib"
+  language "C"
+  warnings "off"
 
   targetdir("bin/" .. outputdir .. "/%{prj.name}")
   objdir("bin-int/" .. outputdir .. "/%{prj.name}")
@@ -11,7 +11,7 @@ project: "GLFW"
   }
 
   filter "system:windows"
-    pic: "On"
+    pic "On"
 
     files {
       "src/win32_init.c",
@@ -30,8 +30,8 @@ project: "GLFW"
       "_GLFW_WIN32"
     }
 
-  filter "system:linux
-    pic: "On"
+  filter "system:linux"
+    pic "On"
 
     files {
       "src/x11_init.c",
@@ -53,9 +53,9 @@ project: "GLFW"
     }
 
   filter "configurations:Debug"
-    runtime: "Debug"
+    runtime "Debug"
     symbols "On"
 
   filter "configurations:Release"
-    runtime: "Release"
-    optimise: "Speed"
+    runtime "Release"
+    optimize "Speed"
