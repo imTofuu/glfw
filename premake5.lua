@@ -58,4 +58,4 @@ project "GLFW"
 
   filter "configurations:Release"
     runtime "Release"
-    optimize "Speed"
+    optimize "speed"
