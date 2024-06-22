@@ -34,9 +34,9 @@ project "GLFW"
     pic "On"
 
     files {
-      "src/x11_init.c",
-			"src/x11_monitor.c",
-			"src/x11_window.c",
+      "src/wl_init.c",
+			"src/wl_monitor.c",
+			"src/wl_window.c",
 			"src/xkb_unicode.c",
 			"src/posix_module.c",
 			"src/posix_time.c",
